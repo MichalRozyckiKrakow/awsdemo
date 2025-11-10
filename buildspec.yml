@@ -11,8 +11,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo "Project Version -> $VERSION"
-      - gradle test
-      - gradle build
+      - mvn test
+      - mvn package
   post_build:
     commands:
       - echo Build completed on `date`
