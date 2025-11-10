@@ -17,7 +17,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - sam package --s3-bucket michalrozyckibucket3 --template-file template.yml --output-template-file outputSamTemplate.yml
-      - ls -la build/libs
+      - ls -la target
 artifacts:
   files:
     - build/libs/michalrozycki-$VERSION.jar
